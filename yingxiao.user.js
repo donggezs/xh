@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name          小黄工具箱2.0
+// @name          小黄工具箱测试
 // @version       1
 // @namespace     http://106.13.128.189/
 // @supportURL    http://106.13.128.189/
-// @author        小黄工具箱2.0
+// @author        小黄工具箱测试
 // @description   生意参谋指数转换，数据分析，数据导出；淘宝客查询
 // @grant         unsafeWindow
 // @grant         GM_setClipboard
