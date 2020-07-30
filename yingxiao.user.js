@@ -22,7 +22,6 @@
 // @include       https://healthcenter.taobao.com*
 // @require       https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js
 // @require       https://cdn.jsdelivr.net/npm/echarts@4.5.0/dist/echarts.js
-// @require       http://106.13.128.189/xh/assets/layui/layui.all.js
 
 // ==/UserScript==
 (function() {
@@ -37,6 +36,5 @@
     
     const script = document.createElement("script");
     script.charset = "UTF-8";
-    script.src = "http://106.13.128.189/xh/dist/main.js";
     document.documentElement.appendChild(script);
 })();
