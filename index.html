@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <script src='https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script src="https://www.yingxiaods.com/xh/assets/layui/layui.all.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/echarts@4.5.0/dist/echarts.js'></script>
+    <link rel="stylesheet" href="https://www.yingxiaods.com/xh/assets/layui/css/layui.css">
+    <!-- <script src="https://www.yingxiaods.com/xh/assets/jszip.min.js"></script> -->
+    <!-- <script src="https://www.yingxiaods.com/xh/assets/FileSaver.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/jszip-utils/0.0.2/jszip-utils.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
+    <link rel='stylesheet' href='./assets/css/common.css'>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #eee;
+        }
+
+        .yx-login{
+            background: #fff;
+        }
+        .yx-login-btn{
+            background: #fff;
+            border-radius: 40px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+            width: 360px;
+            display: -webkit-flex;
+            margin-bottom: 45px;
+            margin: 40px auto 0;
+        }
+        .yx-btn{
+            width: 180px;
+            height: 40px;
+            border: none;
+            border-radius: 40px;
+            outline: none;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .yx-active-btn{
+            color: #fff;
+            background: #ff9800;
+        }
+        .yx-login-tab{
+            width: 360px;
+            margin: 40px auto 0;
+        }
+        .yx-inp1{
+            width: 360px;
+            height: 34px;
+            border-radius: 5px;
+            border: 1px solid #dcdee2;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        input::-webkit-input-placeholder {
+            color: #ddd;
+        }
+        input::-moz-input-placeholder {
+            color: #ddd;
+        }
+        input::-ms-input-placeholder {
+            color: #ddd;
+        }
+        .yx-pass{
+            text-align: right;
+            color: #999;
+        }
+        .yx-pass a{
+            color: #2d8cf0;
+        }
+        .yx-login-btn-dl{
+            width: 360px;
+            height: 40px;
+            margin-top: 40px;
+            width: 100%;
+            height: 40px;
+            background: #ff9800;
+            border-radius: 40px;
+            color: #fff;
+            border: none;
+            outline: none;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .yz_code{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .yz_code span{
+            background: #ff9800;
+            color: #fff;
+            width: 114px;
+            height: 34px;
+            margin-left: 6px;
+            border-radius: 34px;
+            border: none;
+            outline: none;
+            font-size: 13px;
+            text-align: center;
+            line-height: 34px;
+        }
+        .yz_code input{
+            flex: 1;
+        }
+        .yx-login-title{
+            text-align: center;
+            font-size: 16px;
+            padding-top: 40px;
+        }
+        .yx-pass-flex{
+            display: flex;
+            align-items: center;
+        }
+        .flex1{
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body style="height: 10000px;">
+    <div class="yx-login">
+        <div class="yx-login-title">小黄工具箱登录</div>
+        <div class="yx-login-tab yx-tab">
+            <input type="text" class="yx-inp1 yx_login_name" placeholder="请输入手机号码"/>
+            <input type="text" class="yx-inp1 yx_login_password" placeholder="请输入登录密码"/>
+            <div class="yx-pass-flex">
+                <p class="yx-pass">还没注册? <a href="https://www.yingxiaods.com/register" target="_blank">去注册</a></p>
+                <p class="yx-pass flex1">忘记密码? <a href="https://www.yingxiaods.com/forget" target="_blank">找回密码</a></p>
+            </div>
+            <div class="yx-login-btn-dl">登录</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(function () {
+        layui.use('layer', function () {
+            layer.open({
+                type: 1,
+                area: ['550px', '360px'],
+                shade: [0.5,'#000'],
+                title: false, //不显示标题
+                content: $('.yx-login'), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+                cancel: function () {
+                    layer.msg('捕获就是从页面已经存在的元素上，包裹layer的结构', { time: 5000, icon: 6 });
+                }
+            });
+        })
+    })
+</script>
