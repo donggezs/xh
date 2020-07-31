@@ -135,7 +135,7 @@ $(function (){
                     })
                     isLogin = false
 
-                    window.open(`https://www.yingxiaods.com/`, "_blank")
+                    window.open(`https://www.zhaidh.cn/`, "_blank")
                 }else{
                     layui.use('layer', function () {
                         var layer = layui.layer;
@@ -204,10 +204,10 @@ $('body').on('click', '.yx-toggle',function () {
     })
 })
 
-$("body").append("<link rel='stylesheet' href='https://www.yingxiaods.com/xh/assets/css/common.css'>");
-$("body").append("<link rel='stylesheet' href='https://www.yingxiaods.com/xh/assets/layer/theme/default/layer.css?v=3.1.1'>");
-$("body").append("<link rel='stylesheet' href='https://www.yingxiaods.com/xh/assets/layui/css/layui.css'>");
-$("body").append("<div id='yx-loading'><img src='https://www.yingxiaods.com/xh/assets/images/loading.png' class='loading-img' /></div>")
+$("body").append("<link rel='stylesheet' href='https://www.zhaidh.cn/xh/assets/css/common.css'>");
+$("body").append("<link rel='stylesheet' href='https://www.zhaidh.cn/xh/assets/layer/theme/default/layer.css?v=3.1.1'>");
+$("body").append("<link rel='stylesheet' href='https://www.zhaidh.cn/xh/assets/layui/css/layui.css'>");
+$("body").append("<div id='yx-loading'><img src='https://www.zhaidh.cn/xh/assets/images/loading.png' class='loading-img' /></div>")
 
 
 let plugin_name = ""
@@ -220,7 +220,7 @@ $.ajax({
         window.yxInfo = res.data
         let yingxiao = `<div id='yx-yy'>
         <div id='yx'>
-        <img src='https://www.yingxiaods.com/xh/assets/images/reduce.png' alt='' class='yx-off'>
+        <img src='https://www.zhaidh.cn/xh/assets/images/reduce.png' alt='' class='yx-off'>
         <img src='${ res.data.logo }' alt='' class='yx-logo'>
         <p class='yx-name'>${ res.data.plugin_name }</p>
         <div class='yx-category'>
@@ -259,8 +259,8 @@ $.ajax({
                                 <input type="text" class="yx-inp1 yx_login_name" placeholder="请输入手机号码"/>
                                 <input type="password" class="yx-inp1 yx_login_password" placeholder="请输入登录密码"/>
                                 <div class="yx-pass-flex">
-                                    <p class="yx-pass">还没注册? <a href="https://www.yingxiaods.com/register" target="_blank">去注册</a></p>
-                                    <p class="yx-pass flex1">忘记密码? <a href="https://www.yingxiaods.com/forget" target="_blank">找回密码</a></p>
+                                    <p class="yx-pass">还没注册? <a href="https://www.zhaidh.cn/register" target="_blank">去注册</a></p>
+                                    <p class="yx-pass flex1">忘记密码? <a href="https://www.zhaidh.cn/forget" target="_blank">找回密码</a></p>
                                 </div>
                                 <div class="yx-login-btn-dl">登录</div>
                             </div>
@@ -270,8 +270,8 @@ $.ajax({
                             <div class="yx-qrcode"><img src='${url}' /></div>
                             <div class="yx-login-tab yx-tab">
                                 <div class="yx-pass-flex">
-                                    <p class="yx-pass">还没注册? <a href="https://www.yingxiaods.com/register" target="_blank">去注册</a></p>
-                                    <p class="yx-pass flex1">忘记密码? <a href="https://www.yingxiaods.com/forget" target="_blank">找回密码</a></p>
+                                    <p class="yx-pass">还没注册? <a href="https://www.zhaidh.cn/register" target="_blank">去注册</a></p>
+                                    <p class="yx-pass flex1">忘记密码? <a href="https://www.zhaidh.cn/forget" target="_blank">找回密码</a></p>
                                 </div>
                             </div>
                         </div>
@@ -368,15 +368,15 @@ $("body").on("click", '#yx-qrcode-type',function(){
 
 
 $("body").on("click", '#version', function(){
-    window.open(`https://www.yingxiaods.com/#/user/version`, "_blank")
+    window.open(`https://www.zhaidh.cn/#/user/version`, "_blank")
 })
 
 $("body").on("click", '#share', function(){
-    window.open(`https://www.yingxiaods.com/user/share`, "_blank")
+    window.open(`https://www.zhaidh.cn/user/share`, "_blank")
 })
 
 $("body").on("click", '#yx-help', function(){
-    window.open(`https://www.yingxiaods.com/help/0 `, "_blank")
+    window.open(`https://www.zhaidh.cn/help/0 `, "_blank")
 })
 
 $("body").on("click", '#toTaobao', function(){
@@ -389,7 +389,7 @@ $("body").on("click", '#sycm', function(){
 
 
 $("body").on("click", '.yx-caiji-content', function(){
-    window.open(`https://www.yingxiaods.com/`, "_blank")
+    window.open(`https://www.zhaidh.cn/`, "_blank")
 })
 
 function login(){
@@ -479,7 +479,7 @@ $("body").on("click", ".yx-cover-btn2,#yx-userInfo", function(){
                                     <div class='val relative'>
                                         ${user.shop_name}
                                         <div class='yx-gd'>
-                                            <img src="https://www.yingxiaods.com/xh/assets/images/gd.png" style="width:20px;height:20px"/>
+                                            <img src="https://www.zhaidh.cn/xh/assets/images/gd.png" style="width:20px;height:20px"/>
                                             更多
                                             <div class='yx-shop-list'>${ html }</div>
                                         </div>
@@ -554,7 +554,7 @@ $("body").on('mouseleave', '.yx-gd', function(){
 
 const script1 = document.createElement("script");
 script1.charset = "UTF-8";
-script1.src = "https://www.yingxiaods.com/xh/assets/china.js";
+script1.src = "https://www.zhaidh.cn/xh/assets/china.js";
 document.documentElement.appendChild(script1);
 
 
@@ -654,7 +654,7 @@ function isUse(){
             title: "温馨提示",
             btn: ['确定','取消'] //按钮
         }, function(){
-            window.open("https://www.yingxiaods.com/user/version", '_blank')
+            window.open("https://www.zhaidh.cn/user/version", '_blank')
             layer.close(layer.index)
         }, function(){
             layer.close(layer.index)

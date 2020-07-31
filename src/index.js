@@ -1,5 +1,5 @@
 
-window.baseUrl = 'https://www.yingxiaods.com/api'
+window.baseUrl = 'https://www.zhaidh.cn//api'
 let date = new Date()
 let year = date.getFullYear()
 let month = (date.getMonth() + 1) >= 10 ? (date.getMonth() + 1) : '0'+(date.getMonth() + 1)
